@@ -149,6 +149,29 @@ Untuk rilis publik, APK/AAB harus ditandatangani menggunakan keystore produksi. 
 
 ---
 
+## ✅ Status Pengujian
+
+MVP telah diuji pada **23 Juli 2026** menggunakan lingkungan pengembangan CachyOS dan perangkat Android fisik.
+
+- [x] Instalasi dependensi frontend dengan `npm install`.
+- [x] Build frontend dengan `npm run build`.
+- [x] Aplikasi berjalan pada mode pengembangan Tauri desktop.
+- [x] Inisialisasi proyek Tauri Android.
+- [x] Aplikasi berjalan pada perangkat Android fisik melalui ADB.
+- [x] Build paket Android berhasil.
+- [x] Migrasi skema SQLite berhasil dijalankan.
+- [x] Data demo sintetis berhasil dimuat pada instalasi awal.
+- [x] Input pemasukan tunai berhasil.
+- [x] Input pengeluaran berhasil.
+- [x] Pembentukan piutang baru berhasil.
+- [x] Pembayaran piutang parsial dan penuh berhasil.
+- [x] Perhitungan sisa piutang berhasil.
+- [x] Ringkasan finansial, riwayat, dan pencarian transaksi berhasil digunakan.
+
+Pengujian ini memvalidasi alur utama MVP. Pengujian regresi otomatis dan pengujian pada lebih banyak versi Android masih menjadi pekerjaan lanjutan.
+
+---
+
 ## 📁 Struktur Direktori
 
 ```text
