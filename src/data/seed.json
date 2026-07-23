@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "generated_from": "synthetic_demo_data",
+  "generated_at": "2026-07-23T00:00:00+07:00",
+  "categories": [
+    {"id":"KAT-001","transaction_type":"cash_income","name":"Penjualan Tunai","active":1,"notes":"Kategori demo untuk pemasukan penjualan"},
+    {"id":"KAT-002","transaction_type":"cash_income","name":"Pemasukan Lain","active":1,"notes":"Kategori demo untuk pemasukan lain"},
+    {"id":"KAT-003","transaction_type":"expense","name":"Pembelian Ayam Hidup","active":1,"notes":null},
+    {"id":"KAT-004","transaction_type":"expense","name":"Operasional Pasar","active":1,"notes":null},
+    {"id":"KAT-005","transaction_type":"expense","name":"Ongkos Sopir dan Kernet","active":1,"notes":null},
+    {"id":"KAT-006","transaction_type":"expense","name":"Jaga Stand","active":1,"notes":null},
+    {"id":"KAT-007","transaction_type":"expense","name":"Bensin","active":1,"notes":null},
+    {"id":"KAT-008","transaction_type":"expense","name":"Biaya Kandang","active":1,"notes":null},
+    {"id":"KAT-009","transaction_type":"expense","name":"Pengeluaran Lain","active":1,"notes":"Kategori demo untuk pengeluaran lain"},
+    {"id":"KAT-010","transaction_type":"credit_sale","name":"Penjualan Piutang","active":1,"notes":null},
+    {"id":"KAT-011","transaction_type":"receivable_payment","name":"Pelunasan Piutang","active":1,"notes":"Pembayaran penuh maupun sebagian"}
+  ],
+  "customers": [
+    {"id":"PLG-DEMO-001","name":"Pelanggan Contoh A","phone":null,"address":null,"active":1,"notes":"Data sintetis untuk demonstrasi"},
+    {"id":"PLG-DEMO-002","name":"Pelanggan Contoh B","phone":null,"address":null,"active":1,"notes":"Data sintetis untuk demonstrasi"},
+    {"id":"PLG-DEMO-003","name":"Pelanggan Contoh C","phone":null,"address":null,"active":1,"notes":"Data sintetis untuk demonstrasi"},
+    {"id":"PLG-DEMO-004","name":"Pelanggan Contoh D","phone":null,"address":null,"active":1,"notes":"Data sintetis untuk demonstrasi"},
+    {"id":"PLG-DEMO-005","name":"Pelanggan Contoh E","phone":null,"address":null,"active":1,"notes":"Data sintetis untuk demonstrasi"},
+    {"id":"PLG-DEMO-006","name":"Pelanggan Contoh F","phone":null,"address":null,"active":1,"notes":"Data sintetis untuk demonstrasi"}
+  ],
+  "transactions": [
+    {"id":"TRX-DEMO-001","transaction_date":"2026-07-01","transaction_type":"expense","category_id":"KAT-003","customer_id":null,"amount":2500000,"payment_method":"Tunai","receivable_id":null,"due_date":null,"notes":"Contoh pembelian stok","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-01T08:00:00+07:00"},
+    {"id":"TRX-DEMO-002","transaction_date":"2026-07-01","transaction_type":"expense","category_id":"KAT-004","customer_id":null,"amount":175000,"payment_method":"Tunai","receivable_id":null,"due_date":null,"notes":"Contoh biaya operasional","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-01T09:00:00+07:00"},
+    {"id":"TRX-DEMO-003","transaction_date":"2026-07-01","transaction_type":"cash_income","category_id":"KAT-001","customer_id":null,"amount":3150000,"payment_method":"Tunai","receivable_id":null,"due_date":null,"notes":"Contoh pemasukan harian","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-01T18:00:00+07:00"},
+    {"id":"TRX-DEMO-004","transaction_date":"2026-07-02","transaction_type":"credit_sale","category_id":"KAT-010","customer_id":"PLG-DEMO-001","amount":600000,"payment_method":null,"receivable_id":null,"due_date":"2026-07-09","notes":"Contoh piutang pelanggan","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-02T10:00:00+07:00"},
+    {"id":"TRX-DEMO-005","transaction_date":"2026-07-02","transaction_type":"expense","category_id":"KAT-007","customer_id":null,"amount":120000,"payment_method":"Tunai","receivable_id":null,"due_date":null,"notes":"Contoh pembelian bensin","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-02T11:00:00+07:00"},
+    {"id":"TRX-DEMO-006","transaction_date":"2026-07-02","transaction_type":"cash_income","category_id":"KAT-001","customer_id":null,"amount":2900000,"payment_method":"Transfer","receivable_id":null,"due_date":null,"notes":"Contoh pemasukan harian","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-02T18:00:00+07:00"},
+    {"id":"TRX-DEMO-007","transaction_date":"2026-07-03","transaction_type":"receivable_payment","category_id":"KAT-011","customer_id":"PLG-DEMO-001","amount":250000,"payment_method":"Transfer","receivable_id":"TRX-DEMO-004","due_date":null,"notes":"Contoh pembayaran sebagian","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-03T12:00:00+07:00"},
+    {"id":"TRX-DEMO-008","transaction_date":"2026-07-03","transaction_type":"credit_sale","category_id":"KAT-010","customer_id":"PLG-DEMO-002","amount":450000,"payment_method":null,"receivable_id":null,"due_date":"2026-07-10","notes":"Contoh piutang pelanggan","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-03T13:00:00+07:00"},
+    {"id":"TRX-DEMO-009","transaction_date":"2026-07-03","transaction_type":"expense","category_id":"KAT-005","customer_id":null,"amount":200000,"payment_method":"Tunai","receivable_id":null,"due_date":null,"notes":"Contoh ongkos distribusi","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-03T15:00:00+07:00"},
+    {"id":"TRX-DEMO-010","transaction_date":"2026-07-04","transaction_type":"cash_income","category_id":"KAT-001","customer_id":null,"amount":3400000,"payment_method":"Tunai","receivable_id":null,"due_date":null,"notes":"Contoh pemasukan harian","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-04T18:00:00+07:00"},
+    {"id":"TRX-DEMO-011","transaction_date":"2026-07-04","transaction_type":"expense","category_id":"KAT-008","customer_id":null,"amount":300000,"payment_method":"Transfer","receivable_id":null,"due_date":null,"notes":"Contoh perawatan kandang","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-04T14:00:00+07:00"},
+    {"id":"TRX-DEMO-012","transaction_date":"2026-07-05","transaction_type":"receivable_payment","category_id":"KAT-011","customer_id":"PLG-DEMO-002","amount":450000,"payment_method":"Tunai","receivable_id":"TRX-DEMO-008","due_date":null,"notes":"Contoh pelunasan penuh","verification_status":"verified","source":"synthetic_demo_seed","created_at":"2026-07-05T12:00:00+07:00"}
+  ]
+}
