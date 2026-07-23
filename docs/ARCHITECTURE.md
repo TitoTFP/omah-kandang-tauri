@@ -2,8 +2,7 @@
 
 ## Sasaran
 
-Aplikasi pembukuan harian yang nyaman digunakan pada tablet Android, tidak
-memerlukan langganan, dan tetap dapat bekerja tanpa internet.
+Aplikasi pembukuan harian yang nyaman digunakan pada tablet Android, tidak memerlukan langganan, dan tetap dapat bekerja tanpa internet.
 
 ## Komponen
 
@@ -11,7 +10,7 @@ memerlukan langganan, dan tetap dapat bekerja tanpa internet.
 - Tauri 2: shell Android dan desktop.
 - SQLite melalui plugin SQL resmi Tauri: penyimpanan lokal.
 - Migrasi SQL: struktur database dapat dikembangkan secara bertahap.
-- Seed JSON: mengimpor 148 transaksi historis hasil penataan tahap 1.
+- Seed JSON: data demo sintetis untuk pengujian aplikasi publik.
 
 ## Aliran data
 
@@ -34,8 +33,7 @@ Satu tabel transaksi menyimpan empat jenis aktivitas:
 - `credit_sale`: pembentukan piutang.
 - `receivable_payment`: pembayaran sebagian atau penuh atas piutang.
 
-Pembayaran piutang menunjuk transaksi `credit_sale` melalui `receivable_id`.
-Sisa piutang dihitung, bukan disimpan:
+Pembayaran piutang menunjuk transaksi `credit_sale` melalui `receivable_id`. Sisa piutang dihitung, bukan disimpan:
 
 ```text
 sisa = nilai piutang - total pembayaran yang mereferensikan piutang
@@ -46,5 +44,6 @@ sisa = nilai piutang - total pembayaran yang mereferensikan piutang
 - Offline-first dan satu perangkat.
 - Tidak ada akun pengguna.
 - Tidak ada server atau sinkronisasi cloud.
-- Data historis otomatis dimuat pada instalasi pertama.
+- Repository publik hanya memuat data demo sintetis.
+- Data operasional disimpan secara lokal dan tidak disertakan dalam source code.
 - Ekspor/cadangan berkas ditambahkan pada iterasi berikutnya.
